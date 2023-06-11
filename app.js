@@ -25,6 +25,10 @@ app.get('/play', (req, res) => {
   }
 });
 
+app.get('/test', (req, res) => {
+    res.json({ message: 'test' });
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
